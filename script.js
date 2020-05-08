@@ -146,3 +146,9 @@ function generatePassword() {
   // mixes charachters around
   return password.slice(0, length);
 }
+// combines arrays to randomize all charachters
+function getRandomValue(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+// button info!
+generateBtn.addEventListener("click", writePassword);
